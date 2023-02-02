@@ -1,0 +1,11 @@
+.pgrm-main{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+.heading{
+    color: #023e8a;
+}

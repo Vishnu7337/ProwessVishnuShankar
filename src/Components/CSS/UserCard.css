@@ -1,0 +1,11 @@
+.user-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.name-container{
+    border-left: 2px solid saddlebrown;
+    font-size: larger;
+    justify-content: flex-start;
+}
