@@ -11,6 +11,8 @@ import Header from './Components/Header';
 import ChallengesPage from './Components/Pages/ChallengesFolder/ChallengesPage';
 import UserPage from './Components/Pages/UserPage/UserPage';
 import ScoreBoardpage from './Components/Pages/ScoreBoardPage/ScoreBoardpage';
+import HomePage from './Components/Pages/HomePage/HomePage';
+import PageNotFound from './Components/PageNotFound';
 
 
 function App() {
@@ -21,13 +23,14 @@ function App() {
       <Header></Header>
       <BrowserRouter>
     <Routes>
-     
+   
+      <Route path="/" element={<HomePage></HomePage>}></Route>
       <Route path="/login" element={<LoginPage></LoginPage>}></Route>
       <Route path="/register" element={<RegistrationPage></RegistrationPage>}></Route>
       <Route path="/challenges" element={<ChallengesPage></ChallengesPage>}></Route>
       <Route path="/users" element={<UserPage></UserPage>}></Route>
       <Route path="/scoreboard" element={<ScoreBoardpage></ScoreBoardpage>}></Route>
-      
+      <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
     </Routes>
     </BrowserRouter>
 
