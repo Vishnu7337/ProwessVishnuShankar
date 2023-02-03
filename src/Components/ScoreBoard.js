@@ -44,6 +44,7 @@ function ScoreBoard(){
         );
     return (
         <div class="content-ctn">
+            <h1>Scoreboard</h1>
 
             <table>
                 <tr class="table-heading">

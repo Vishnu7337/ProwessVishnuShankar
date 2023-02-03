@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import './CSS/Card.css'
 import './CSS/popup.css'
-function Card(){
+const Card=(props)=>{
+    const tit=props.Title;
+    const sc=props.Score;
     const[popup,setPopup]=useState(false);
     const togglePopup=()=>{
         setPopup(!popup)
@@ -16,10 +18,10 @@ function Card(){
         <div className="card-main">
             <div className="card-cnt" onClick={togglePopup}>
                 <div className="card-cnt-left">
-                    <h4>Server Addition!</h4>
+                    <h4>{tit}</h4>
                 </div>
                 <div className="card-cnt-right">
-                    <h5>15</h5>
+                    <h5>{sc}</h5>
                 </div>
             </div> 
             {popup &&(
